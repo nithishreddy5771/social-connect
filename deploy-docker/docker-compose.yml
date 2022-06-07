@@ -1,0 +1,29 @@
+version: "3"
+services:
+  react-app:
+    image: srinivasmt2020062/social-connect-frontend:latest
+    stdin_open: true
+    ports:
+      - "3000:3000"
+    networks:
+      - mern-app
+  api-server:
+    image: srinivasmt2020062/social-connect-backend:latest
+    ports:
+      - "3001:3001"
+    networks:
+      - mern-app
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:3.6.23-xenial
+    networks:
+      - mern-app
+    volumes:
+      - mongo-data:/data/db
+networks:
+  mern-app:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local

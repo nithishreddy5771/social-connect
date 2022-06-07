@@ -1,0 +1,25 @@
+{
+  "/" : "default route to get api documentation describing all end points",
+  "/signup" : "sign up new user",
+  "/signin" : "sign in from existing account",
+  "/signout" : "sign out from logged in account",
+  "/getAllUsers" : "get all users -- no authentication required",
+  "/getSingleUser/:userId" : "get single user by userId",
+  "/updateUser/:userId" : "update user by userId",
+  "/deleteUser/:userId" : "delete user by userId",
+  "/getPosts" : "get all posts -- no authentication required",
+  "/createPost/:userId" : "create post from a userId",
+  "/getPostsByUser/:userId" : "get all posts of a user using userId",
+  "/deletePostById/:postId" : "delete a post by postId",
+  "/updatePostById/:postId" : "update post by postId",
+  "/user/follow" : "follow particular user",
+  "/user/unfollow" : "unfollow particular user",
+  "/user/photo/:userId" : "fetch photo by userId",
+  "/user/findPeople/:userId" : "find people to follow",
+  "/post/photo/:postId" : "fetch the photo of particular post using postId",
+  "/post/like" : "method to like a post",
+  "/post/unlike": "method to unlike a post",
+  "/forgot-password" : "forgot password",
+  "/reset-password" : "reset password"
+
+}
